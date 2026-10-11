@@ -142,3 +142,25 @@ Both deterministic reproductions succeeded.
 the ten-proofs artifact set at HEAD `94bc0feb`.
 
 Independent re-review by separate agents: see `results/independent_review.md`.
+
+## Session 4 — independent review B, rebuild-type (2026-10-11)
+
+Reviewer B (separate agent, no access to other reviewers' reports) performed a
+delete-and-rebuild spot check on a **different pair** of certificates than the
+main session used (SpherePacking + MulticolorTriangleRamsey):
+
+```
+SpherePacking              (55,616 lines): rc=0, wall 148.5 s, peak 9.54 GB
+MulticolorTriangleRamsey   ( 3,053 lines): rc=0, wall  11.9 s, peak 6.50 GB
+```
+
+- **sha256 of rebuilt oleans: bit-identical** to pre-deletion baseline
+  (`9bd55892…`, `1bd5feb2…`); full `sha256sum -c` over all 10 oleans: 10/10.
+  The other 8 oleans untouched. Lean compilation determinism holds on this machine.
+- Quantity check vs README claims: SpherePacking 201 s vs 148.5 s = 1.35× (same
+  order). MulticolorTriangleRamsey 135 s vs 11.9 s = 11.3× — **flagged**; root
+  cause: the 135 s figure was the *first* build including the `Comparator`
+  dependency (8656 jobs), not the single-module time. README row 1 annotated
+  accordingly (warm time 12 s).
+
+**Reviewer B verdict: reproducible, PASS.**

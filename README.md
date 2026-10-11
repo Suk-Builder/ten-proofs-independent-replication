@@ -11,7 +11,7 @@ Science*](https://openai.com/index/ten-advances-in-mathematics/), OpenAI, Aug 1 
 
 | # | Result | File | Build | Static scan | Axiom audit | Wall time |
 |---|---|---|---|---|---|---|
-| 1 | Multicolor triangle Ramsey (Erdős #183) | `MulticolorTriangleRamsey.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 135 s |
+| 1 | Multicolor triangle Ramsey (Erdős #183) | `MulticolorTriangleRamsey.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 135 s (first build incl. Comparator dep); 12 s warm (reviewer B) |
 | 2 | Non-sofic groups exist | `NonSoficGroup.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 87 s |
 | 3 | Quantitative compactness counterexample | `CompactnessAndDegeneracy.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 3.8 s (re-verify) |
 | 4 | Two-degenerate graphs counterexample | `CompactnessAndDegeneracy.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | — |
