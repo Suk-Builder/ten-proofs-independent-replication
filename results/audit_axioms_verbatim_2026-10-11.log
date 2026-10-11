@@ -1,0 +1,58 @@
+# Verbatim axiom audit — 2026-10-11T15:48:39+08:00 — ten-proofs HEAD 94bc0feb
+# command: lake env lean <tmpfile with 'import <Lib>' + '#print axioms <Decl>'
+
+## PackingBounds.sharpFullCohnElkiesManuscriptConclusions  (SpherePacking.lean)  [2026-10-11T15:48:39+08:00]
+'PackingBounds.sharpFullCohnElkiesManuscriptConclusions' depends on axioms: [propext, Classical.choice, Quot.sound]
+[exit=0]
+
+## MetricCodes.Johnson.binaryRate_lt_mrrw  (MetricCodes.lean)  [2026-10-11T15:52:20+08:00]
+'MetricCodes.Johnson.binaryRate_lt_mrrw' depends on axioms: [propext, Classical.choice, Quot.sound]
+[exit=0]
+
+## MetricCodes.Spherical.HigherHierarchy.strict_hierarchy  (MetricCodes.lean)  [2026-10-11T15:52:41+08:00]
+'MetricCodes.Spherical.HigherHierarchy.strict_hierarchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+[exit=0]
+
+## PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound  (Permanent.lean)  [2026-10-11T15:52:46+08:00]
+'PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+[exit=0]
+
+## SoficGroups.SourceTopLevelCompressionFinal.exists_finitelyPresented_nonsofic_group  (NonSoficGroup.lean)  [2026-10-11T15:52:51+08:00]
+'SoficGroups.SourceTopLevelCompressionFinal.exists_finitelyPresented_nonsofic_group' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+[exit=0]
+
+## ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors  (ConnesRigidity.lean)  [2026-10-11T15:52:55+08:00]
+'ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+[exit=0]
+
+## Ehrhart.Volume.ehrhart_volume_inequality_for_sets  (EhrhartVolumeInequality.lean)  [2026-10-11T15:52:59+08:00]
+'Ehrhart.Volume.ehrhart_volume_inequality_for_sets' depends on axioms: [propext, Classical.choice, Quot.sound]
+[exit=0]
+
+## QuantumParallelRepetition.distributionUniformExponential  (QuantumParallelRepetition.lean)  [2026-10-11T15:53:03+08:00]
+'QuantumParallelRepetition.distributionUniformExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+[exit=0]
+
+## GapCVP.Comparator.gapCVP400IsNPHard  (GapCVP.lean)  [2026-10-11T15:53:07+08:00]
+'GapCVP.Comparator.gapCVP400IsNPHard' depends on axioms: [propext, Classical.choice, Quot.sound]
+[exit=0]
+
+## ErdosProblems.MulticolourTriangleRamsey.erdos_problem_183_explicit  (MulticolorTriangleRamsey.lean)  [2026-10-11T15:53:12+08:00]
+'ErdosProblems.MulticolourTriangleRamsey.erdos_problem_183_explicit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+[exit=0]
+
+## CompactnessConjecture.quantitativeCompactnessCounterexample  (CompactnessAndDegeneracy.lean)  [2026-10-11T15:53:15+08:00]
+'CompactnessConjecture.quantitativeCompactnessCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+[exit=0]
+
+## TwoDegenerateGraphs.twoDegenerateExtremalCounterexample  (CompactnessAndDegeneracy.lean)  [2026-10-11T15:53:19+08:00]
+'TwoDegenerateGraphs.twoDegenerateExtremalCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+[exit=0]

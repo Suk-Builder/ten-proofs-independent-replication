@@ -20,11 +20,24 @@
 
 - **Statement fidelity.** Compilation proves the *formal* theorems are proven;
   it does not prove the formal statements say what the human-readable paper
-  claims they say. Upstream's `ComparatorChallenges` (A–J) exist to pin
-  statement-level checks; auditing those is **future work here** (see
-  grwtsk/openai-math AUDIT.20 — "beyond the two enabled Comparator
-  configurations" — independent kernel-level comparator verification is not
-  yet complete anywhere public).
+  claims they say. The upstream `ComparatorChallenges` target (12 challenge
+  files, built here: 252 s, rc=0) partially addresses this, but those files
+  contain **42 `sorry` stubs by upstream design** — they pin statements, they
+  are not complete proofs. Full comparator verification remains **future work
+  here and everywhere** (see grwtsk/openai-math AUDIT.20 — "beyond the two
+  enabled Comparator configurations" — independent kernel-level comparator
+  verification is not yet complete anywhere public).
+- **Audit coverage.** The axiom audit covers the **12 headline declarations**
+  named in upstream `formalization.yaml`; other theorems/lemmas in the files
+  were compiled (kernel-checked as part of the file) but their individual
+  axiom dependencies were not printed. The static scan likewise covers the
+  **10 certificate files only** — the 12 challenge files contain upstream's
+  own `sorry` stubs and are excluded from the "clean" claim.
+- **TCB beyond the kernel.** The Lean **toolchain binaries** and the Mathlib
+  oleans are trusted artifacts whose integrity rests on TLS-fetched
+  distribution (elan/Mathlib), not on independent verification; a compromised
+  toolchain could in principle mislead any compilation-based audit, including
+  ours. Mathlib commit authenticity beyond HTTPS is not established here.
 - **Metaprogramming soundness.** `run_tac`/custom elaborators execute
   *arbitrary code at elaboration time* (grwtsk AUDIT.09). A proof can be
   kernel-clean while its *construction process* used untrusted code. We

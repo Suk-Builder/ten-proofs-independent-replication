@@ -164,3 +164,22 @@ MulticolorTriangleRamsey   ( 3,053 lines): rc=0, wall  11.9 s, peak 6.50 GB
   accordingly (warm time 12 s).
 
 **Reviewer B verdict: reproducible, PASS.**
+
+## Session 5 — red-team remediations (2026-10-11 15:45)
+
+Reviewer C (red team) found 2 severe / 6 medium / 7 minor issues. All severe
+and medium items remediated in this commit; full account in
+`independent_review.md`. Key actions:
+
+1. `CompactnessAndDegeneracy.olean` (previously built by env-prep on 10-10)
+   **deleted and rebuilt from scratch by the verification session**:
+   `WALL 178.83s MAXRSS 7314432KB rc=0`, sha256
+   `055fdb3b3746f91aedf8072af310e7ea65e629d8b0eea1a9db96f2117243db14`.
+2. `ComparatorChallenges` lakefile target built for the first time:
+   `WALL 252.10s rc=0` — **contains 42 upstream `sorry` stubs by design**
+   (12 challenge files); disclosed everywhere.
+3. Verbatim axiom audit re-run: 12/12 declarations, 12/12 exit=0 →
+   `audit_axioms_verbatim_2026-10-11.log`.
+4. sha256 fingerprints: `sources_sha256_2026-10-11.txt` (10 sources + 10 oleans + All.lean).
+5. README/PROVENANCE/METHOD rewritten: roles table, independence scoping,
+   TCB honesty, static-scan scope, monitor coverage window, reproduce recipe.
