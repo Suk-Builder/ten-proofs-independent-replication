@@ -13,18 +13,18 @@ Science*](https://openai.com/index/ten-advances-in-mathematics/), OpenAI, Aug 1 
 |---|---|---|---|---|---|---|
 | 1 | Multicolor triangle Ramsey (Erdős #183) | `MulticolorTriangleRamsey.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 135 s |
 | 2 | Non-sofic groups exist | `NonSoficGroup.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 87 s |
-| 3 | Quantitative compactness counterexample | `CompactnessAndDegeneracy.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | — |
+| 3 | Quantitative compactness counterexample | `CompactnessAndDegeneracy.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 3.8 s (re-verify) |
 | 4 | Two-degenerate graphs counterexample | `CompactnessAndDegeneracy.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | — |
-| 5 | Permanent formula lower bound | `Permanent.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 115 s |
-| 6 | Connes rigidity disproof | `ConnesRigidity.lean` | ✅ (478 s) | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 478 s |
-| 7 | Ehrhart volume inequality | `EhrhartVolumeInequality.lean` | ⏳ building | ✅ clean | — | — |
-| 8 | Sharp Cohn–Elkies sphere packing | `SpherePacking.lean` | ⏳ | ✅ clean | — | — |
-| 9 | Quantum parallel repetition | `QuantumParallelRepetition.lean` | ⏳ | ✅ clean | — | — |
-| 10 | Binary/spherical codes (MRRW) | `MetricCodes.lean` | ⏳ | ✅ clean | — | — |
-| 11 | GapCVP₄₀₀ NP-hardness | `GapCVP.lean` | ⏳ | ✅ clean | — | — |
+| 5 | Permanent formula lower bound | `Permanent.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 115 s; **rebuild-from-scratch 107 s** |
+| 6 | Connes rigidity disproof | `ConnesRigidity.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 478 s |
+| 7 | Ehrhart volume inequality | `EhrhartVolumeInequality.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 204 s; **rebuild-from-scratch 98 s** |
+| 8 | Sharp Cohn–Elkies sphere packing | `SpherePacking.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 201 s |
+| 9 | Quantum parallel repetition | `QuantumParallelRepetition.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 705 s |
+| 10 | Binary/spherical codes (MRRW) | `MetricCodes.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 685 s |
+| 11 | GapCVP₄₀₀ NP-hardness | `GapCVP.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 305 s |
 
-**Progress: 6/11 builds, 6/6 axiom audits passed (as of last update).**
-Raw logs in [`logs/`](logs/), live table in [`results/results.md`](results/results.md).
+**Final: 11/11 builds, 12/12 axiom audits exact-match, 10/10 files static-clean, 2/2 rebuild-from-scratch spot-checks passed.**
+Raw logs in [`logs/`](logs/), verbatim records in [`results/results.md`](results/results.md).
 
 ## What we check (and what we don't)
 

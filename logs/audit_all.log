@@ -1,0 +1,12 @@
+OK   GapCVP.Comparator.gapCVP400IsNPHard
+OK   ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors
+OK   MetricCodes.Spherical.HigherHierarchy.strict_hierarchy
+OK   SoficGroups.SourceTopLevelCompressionFinal.exists_finitelyPresented_nonsofic_group
+OK   CompactnessConjecture.quantitativeCompactnessCounterexample
+OK   Ehrhart.Volume.ehrhart_volume_inequality_for_sets
+OK   TwoDegenerateGraphs.twoDegenerateExtremalCounterexample
+OK   ErdosProblems.MulticolourTriangleRamsey.erdos_problem_183_explicit
+OK   PackingBounds.sharpFullCohnElkiesManuscriptConclusions
+OK   PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound
+OK   MetricCodes.Johnson.binaryRate_lt_mrrw
+OK   QuantumParallelRepetition.distributionUniformExponential
