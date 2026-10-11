@@ -1,0 +1,2 @@
+import MulticolorTriangleRamsey
+#print axioms ErdosProblems.MulticolourTriangleRamsey.erdos_problem_183_explicit

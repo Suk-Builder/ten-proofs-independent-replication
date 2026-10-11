@@ -1,0 +1,10 @@
+===== START CompactnessAndDegeneracy 14:30:01 =====
+Build completed successfully (8656 jobs).
+WALL 3.84s MAXRSS 930684KB
+===== END CompactnessAndDegeneracy rc=0 14:30:05 =====
+===== START Permanent 14:30:05 =====
+✔ [8655/8656] Built Permanent (112s)
+Build completed successfully (8656 jobs).
+WALL 115.02s MAXRSS 7685672KB
+===== END Permanent rc=0 14:32:00 =====
+===== START ConnesRigidity 14:32:00 =====
