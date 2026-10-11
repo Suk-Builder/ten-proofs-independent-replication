@@ -16,14 +16,14 @@ Science*](https://openai.com/index/ten-advances-in-mathematics/), OpenAI, Aug 1 
 | 3 | Quantitative compactness counterexample | `CompactnessAndDegeneracy.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | — |
 | 4 | Two-degenerate graphs counterexample | `CompactnessAndDegeneracy.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | — |
 | 5 | Permanent formula lower bound | `Permanent.lean` | ✅ | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 115 s |
-| 6 | Connes rigidity disproof | `ConnesRigidity.lean` | ⏳ | ✅ clean | — | — |
-| 7 | Ehrhart volume inequality | `EhrhartVolumeInequality.lean` | ⏳ | ✅ clean | — | — |
+| 6 | Connes rigidity disproof | `ConnesRigidity.lean` | ✅ (478 s) | ✅ clean | ✅ `[propext, Classical.choice, Quot.sound]` | 478 s |
+| 7 | Ehrhart volume inequality | `EhrhartVolumeInequality.lean` | ⏳ building | ✅ clean | — | — |
 | 8 | Sharp Cohn–Elkies sphere packing | `SpherePacking.lean` | ⏳ | ✅ clean | — | — |
 | 9 | Quantum parallel repetition | `QuantumParallelRepetition.lean` | ⏳ | ✅ clean | — | — |
 | 10 | Binary/spherical codes (MRRW) | `MetricCodes.lean` | ⏳ | ✅ clean | — | — |
 | 11 | GapCVP₄₀₀ NP-hardness | `GapCVP.lean` | ⏳ | ✅ clean | — | — |
 
-**Progress: 5/11 builds, 5/5 axiom audits passed (as of last update).**
+**Progress: 6/11 builds, 6/6 axiom audits passed (as of last update).**
 Raw logs in [`logs/`](logs/), live table in [`results/results.md`](results/results.md).
 
 ## What we check (and what we don't)

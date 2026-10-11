@@ -1,0 +1,2 @@
+import ConnesRigidity
+#print axioms ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors

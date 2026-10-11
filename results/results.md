@@ -68,3 +68,16 @@ WALL 115.02s MAXRSS 7685672KB
 
 Remaining builds & audits will be appended as they complete; this file is
 append-only per verification session.
+
+## Session 2 update (2026-10-11 14:45)
+
+```
+$ decl = ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors  (ConnesRigidity.lean)
+'ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+build: ===== END ConnesRigidity rc=0 14:39:59 =====  WALL 478.37s MAXRSS 7304376KB
+```
+
+**Running total: 6/11 builds, 6/6 axiom audits exact-match.**
